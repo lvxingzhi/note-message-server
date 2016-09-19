@@ -31,7 +31,7 @@ public class ClientMain {
         IoConnector connector = new NioSocketConnector();
 
         // 设置连接超时时间
-        connector.setConnectTimeoutMillis(30000);
+        connector.setConnectTimeoutMillis(40000);
 
         // 设置过滤器
         connector.getFilterChain().addLast("codec",new ProtocolCodecFilter(new TextLineCodecFactory(
