@@ -43,7 +43,7 @@ public class ClientMain {
         connector.setHandler(new MessageClientHandler("你好 \r\n 123"));
 
         connector.connect(new InetSocketAddress("127.0.0.1",9123));
-Scanner sanner = new Scanner(System.in);
+        Scanner sanner = new Scanner(System.in);
         String consoleIn = sanner.nextLine();
 
         Map<Long,IoSession> ioSessions = connector.getManagedSessions();
